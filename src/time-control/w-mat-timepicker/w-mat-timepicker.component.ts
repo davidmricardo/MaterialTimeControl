@@ -16,6 +16,7 @@ import { ITime } from '../w-clock/w-clock.component';
 export class WMatTimePickerComponent implements OnInit {
 
     @Input() userTime: ITime;
+    @Input() placeholder:string="Selec time";
     @Output() userTimeChange: EventEmitter<ITime> = new EventEmitter();
 
     @Input() color: string;
